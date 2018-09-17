@@ -1,0 +1,39 @@
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+/bin/
+/doc/~*
+/scraps/
+
+### App-Specific ###
+/killer-app-common/build/
+/killer-app-common/bin/
+/killer-app-svc/build/
+/killer-app-svc/bin/
+/killer-app-web/build/
+/killer-app-web/bin/
+
+
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/

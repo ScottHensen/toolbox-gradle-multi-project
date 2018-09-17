@@ -1,0 +1,5 @@
+rootProject.name = 'killer-app'
+
+include 'killer-app-common'
+include 'killer-app-svc'
+include 'killer-app-web'

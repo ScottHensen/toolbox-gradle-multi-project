@@ -1,0 +1,27 @@
+subprojects {
+	repositories {
+		mavenCentral()
+	}
+}
+
+def javaProjects = subprojects.findAll {
+	it.name in ['killer-app-common', 'killer-app-svc', 'killer-app-web']
+}
+
+// this INJECTS configuration into the other builds; it's needed for compiling from the parent project
+configure(javaProjects) {		
+	apply plugin: 'java'
+}
+
+project(':killer-app-svc') {
+	dependencies {
+		compile project(':killer-app-common')
+	}
+}
+
+project(':killer-app-web') {
+	dependencies {
+		compile project(':killer-app-common')
+	}
+}
+
