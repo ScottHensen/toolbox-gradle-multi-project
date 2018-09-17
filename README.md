@@ -1,5 +1,6 @@
 # Template Multi-Project Gradle Build
-For a step-by-step on the construction of this template, see:  
+For a step-by-step on the construction of this template, see the Gradle 
+Multi-Project Builds post at https://scotthensen.github.io  
 
 
 ### Project Structure:
